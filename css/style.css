@@ -62,7 +62,7 @@ html{
   main {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
-    grid-gap: 20px;
+    grid-gap: 10px;
     padding: 0 20px;
 }
 
@@ -181,14 +181,14 @@ h1{
 
     article {
         background-color: #f9f9f9; 
-        padding: 20px;
-        margin: 20px 0;
+        padding: 10px;
+        margin: px 0;
         border: #FFCB05 2px solid;
     }
 
     .custom-article {
         background-color: #f9f9f9; 
-        padding: 20px;
+        padding: 10px;
         margin: 20px 0;
         border: #FFCB05 2px dotted;
     }
