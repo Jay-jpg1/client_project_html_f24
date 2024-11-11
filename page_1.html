@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>CAPS</title>
 </head>
@@ -32,6 +33,7 @@
             <p>Welcome to Counseling and Psychological Services (CAPS)! CAPS serves as the primary mental health service at University of Michigan with offices on both the Central and North campuses. CAPS provides a set of core services, including clinical services, educational workshops, and consultation with faculty, staff, and parents.  </p>
         </div>
         <div>
+            <article>
             <h3> Hours & Locations</h3>
             <p> CAPS has two locations: the main office is located on the 3rd floor of the Michigan Union and the satellite office is located in the North Quad Residential Community Center. </p>
             <ul>
@@ -48,8 +50,12 @@
                         </li>
                     </ul>
             </ul>
+            <img src="images/UHS.jpg" alt=" health service sign for the university of michigan ">
+        <!-- Jackie Wolf -->
+        </article>
         </div>
         <div>
+            <article>
             <h3> Services</h3>
             <p> CAPS offers a variety of services to help students manage their mental health. These services include:</p>
             <ul>
@@ -58,14 +64,16 @@
                 <li>Workshops</li>
                 <li>Psychiatric Services</li>
                 <li>Consultation</li>
-           
-            
+                </ul>
+            <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="Student with a backpack walking on a college campus in the fall">
+
+            </article>
         </div>
 
 
             
-        <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="Student with a backpack walking on a college campus in the fall">
-        <img src="images/UHS.jpg" alt=" health service sign for the university of michigan ">
+        <!-- <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="Student with a backpack walking on a college campus in the fall"> -->
+        <!-- <img src="images/UHS.jpg" alt=" health service sign for the university of michigan "> -->
         <!-- Jackie Wolf -->
     
         <div></div>
@@ -74,10 +82,34 @@
         <div></div>
     </main>
     <footer>
-        <p>Counseling and Psychological Services | <a href="https://caps.umich.edu/">University of Michigan CAPS</a></p>
-        <p>The University of Michigan School of Information</p>
+        <div class="footer-content">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" id="umsi-logo">
+            <div class="footer-text">
+                <p>School of Information
+                    <br>
+                    University of Michigan
+                    <br>
+                    105 S State St.
+                    <br>
+                    Ann Arbor, MI 48109-1285</p>
+            </div>
+            <div class="footer-text">
+            <p>Student Success Portal | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+       
+            
+            <p>©  <span id="year"> </span> The Regents of the University of Michigan </p>
+        
+        </div>
+    </div>
     </footer>
-    
-</body>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    </body>
+    </html>
 
-</html>
+    <script>
+        document.getElementById("dark-mode-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>

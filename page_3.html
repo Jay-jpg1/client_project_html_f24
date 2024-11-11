@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>MSI Degree Requirements</title>
@@ -72,10 +73,28 @@
         <div></div>
     </main>
     <footer>
-        <p>MSI Degree Requirements | <a href="https://sites.google.com/umich.edu/msiacademicadvising/msi-degree-requirements">UMSI Degree Requirements </a></p>
-        <p>The University of Michigan School of Information</p>
+        <div class="footer-content">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" id="umsi-logo">
+            <div class="footer-text">
+                <p>School of Information
+                    <br>
+                    University of Michigan
+                    <br>
+                    105 S State St.
+                    <br>
+                    Ann Arbor, MI 48109-1285</p>
+            </div>
+            <div class="footer-text">
+            <p>Student Success Portal | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+       
+            
+            <p>©  <span id="year"> </span> The Regents of the University of Michigan </p>
+        
+        </div>
+    </div>
     </footer>
-    
-</body>
-
-</html>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    </body>
+    </html>

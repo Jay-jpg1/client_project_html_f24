@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>First Gen</title>
 </head>
@@ -58,6 +59,11 @@
                 <li>UM Career Center</li>
                 <li>UCAN</li>
             </ul>
+            <figure>
+            <img src="images/MPHOTO-UMCampusMiscStock22_SS_204.JPG" alt="Wide shot of Alexander G. Ruthven Building">
+            <figcaption>Alexander G. Ruthven Building</figcaption>
+        </figure>
+            
         </article>
         <article>
             <h3 class="page-2">Coursework & Academics</h3>
@@ -77,12 +83,31 @@
         <div></div>
         <div></div>
         <div></div>
+       
     </main>
     <footer>
-        <p>First Generation Resources | <a href="https://firstgen.umich.edu/">UMICH First Gen </a></p>
-        <p>The University of Michigan School of Information</p>
+        <div class="footer-content">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" id="umsi-logo">
+            <div class="footer-text">
+                <p>School of Information
+                    <br>
+                    University of Michigan
+                    <br>
+                    105 S State St.
+                    <br>
+                    Ann Arbor, MI 48109-1285</p>
+            </div>
+            <div class="footer-text">
+            <p>Student Success Portal | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+       
+            
+            <p>©  <span id="year"> </span> The Regents of the University of Michigan </p>
+        
+        </div>
+    </div>
     </footer>
-    
-</body>
-
-</html>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    </body>
+    </html>

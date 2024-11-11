@@ -20,14 +20,16 @@
                 <li><a href = "page_1.html">CAPS</a></li>
                 <li><a href = "page_2.html">First Gen</a></li>
                 <li><a href = "page_3.html">MSI Degree Requirements</a></li>
+                
             </ul>
         </nav>
         
     </header>
     <main id="main" >
     <div class = "intro">
-        <h1>Student Success Portal</h1>
+        <h1>Student Success Portal</h1> 
         <h2>Welcome to the UM Grad Success Navigator</h2>
+        <p><button id="dark-mode-toggle">Toggle Dark Mode</button></p>
         <p> Your Comprehensive Guide to Resources for Graduate School Success.
         This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
         <ul>
@@ -39,6 +41,12 @@
         </ul>
 
     </div>
+    <script>
+        document.getElementById("dark-mode-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+   
     
 
         <section>
@@ -110,8 +118,30 @@
     </main>
 
     <footer>
+    
+    <div class="footer-content">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" id="umsi-logo">
+        <div class="footer-text">
+            <p>School of Information
+                <br>
+                University of Michigan
+                <br>
+                105 S State St.
+                <br>
+                Ann Arbor, MI 48109-1285</p>
+        </div>
+        <div class="footer-text">
         <p>Student Success Portal | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        <p>The University of Michigan School of Information</p>
-        </footer>
+   
+        
+        <p>©  <span id="year"> </span> The Regents of the University of Michigan </p>
+    
+    </div>
+</div>
+</footer>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
 </body>
 </html>
