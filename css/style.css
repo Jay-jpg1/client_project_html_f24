@@ -286,6 +286,9 @@ body.dark-mode article {
 body.dark-mode h3 {
     background-color: #121E3A;
 }
+body.dark-mode h1 {
+    color: #f5f5f5;
+}
 /* Links in darkmode */
 a {
     color: #007bff;
