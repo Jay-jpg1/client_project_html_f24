@@ -140,28 +140,10 @@ h1{
     }
     ul li.active a{
          /* Example: blue background for active item */
-        color: white; /* White text */
+        color: #9A3324; /* White text */
         font-weight: bold; /* Bold text */
         border-radius: 5px; /* Rounded corners */
     
-    }
-
-   /* nav a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    nav a:hover {
-        text-decoration: underline;
-    }
-    
-    formatting the footer
-
-    footer {
-        background-color: #333;
-        color: white;
-        padding: 10px;
-        text-align: center;
     }
     
  
@@ -177,6 +159,7 @@ h1{
         max-width: 100%;  /* Makes the image responsive */
         height: auto;     /* Maintain aspect ratio */
         display: block;   /* Avoid inline spacing issues */
+        align-self: center;
     }
 
     article {
@@ -210,18 +193,97 @@ h1{
     list-style-position: inside;
  }
  
-
+    /*formatting the footer*/
     footer {
+    
         background-color: #00274C;
         color: white;
         padding: 10px;
         text-align: center;
     }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .footer-text {
+        text-align: right;
+        flex: 1;
+    ;
+    }
+    .footer-text p {
+        margin: 5px 0;
+    }
+    /*formatting the image in the footer*/
+    #umsi-logo {
+        height: auto;
+        width: 100px;
+        align-self: right;
+        
+    }
+/*formatting the links in the footer*/
     footer a {
         color: #FFCB05;
         font-weight: bold;
     }
     footer a:hover {
-        color: #FFFFFF; /* Change to white on hover */
+        color: #FFFFFF; 
         text-decoration: underline;
     }
+/*Media Query for the desktop view*/
+    @media only screen and (min-width: 1000px){
+        main{
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 1800px;
+            padding: 50px;
+            grid-gap: 20px;
+            padding: 0 20px;
+        }
+
+        h1{
+            grid-column: span 3;
+        }
+        .intro{
+            grid-column: span 3;
+        }
+        h3{
+            background-color: #FFCB05;
+            padding: 10px;
+            border-radius: 5px;
+            height: auto;
+        }
+
+    }
+/* Dark Mode */
+body.dark-mode {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+body.dark-mode header {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+}
+body.dark-mode footer {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+}
+/* Formates Dark Mode for text with borders "articles" */
+body.dark-mode article {
+    background-color: #333333; 
+}
+body.dark-mode h3 {
+    background-color: #121E3A;
+}
+/* Links in darkmode */
+a {
+    color: #007bff;
+}
+
+body.dark-mode a {
+    color: #003366
+}
+/* Slows the transition from lightmode to darkmode */
+body, header, footer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
