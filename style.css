@@ -28,6 +28,7 @@ html{
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 1;
+    color:#00274C
   }
 
   :focus {
@@ -158,7 +159,7 @@ h1{
     img {
         max-width: 100%;  /* Makes the image responsive */
         height: auto;     /* Maintain aspect ratio */
-        display: block;   /* Avoid inline spacing issues */
+        
         align-self: center;
     }
 
@@ -246,6 +247,17 @@ h1{
         .intro{
             grid-column: span 3;
         }
+        .intro img{
+            /* display: grid;
+            grid-column: span 3; */
+            width:80%;
+            height:auto;
+            padding:0;
+            margin:0;
+    
+            border-radius: 8px;
+        }
+
         h3{
             background-color: #FFCB05;
             padding: 10px;
